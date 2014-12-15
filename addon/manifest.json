@@ -1,0 +1,28 @@
+﻿{
+ "name": "客户资料收集", 
+   "version": "1.0", 
+   "manifest_version":2,
+   "description": "邮件收集器1.0", 
+   "browser_action": { 
+      "default_icon": "logo.png", 
+      "default_popup": "popup.html" 
+   },
+
+	"background": { "scripts": ["js/bg2.js"] },
+	"permissions": ["contextMenus","tabs","http://localhost/*"],
+	"icons": {"16": "context.png"},
+
+
+	
+	"content_scripts": [
+    {
+      "matches": ["http://sukebei.nyaa.se/*"],
+      "js": ["js/jquery-1.11.0.min.js","js/hack.js"]
+    }
+	,
+	{
+      "matches": ["http://www.storetorrent.net/*"],
+      "js": ["js/jquery-1.11.0.min.js","js/hack2.js"]
+    }
+	]
+  }

@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>弹出页面
+</title>
+<style>
+div{width:200px;margin:5px;background-color:green;}
+#nav{}
+#nav *{margin:auto;display:block;background-color:red;text-align:center;}
+#search{width:200px:height:200px;background-color:red;}
+.left{text-align:center;}
+body{}
+
+#c_qq{background: white url(tel32.png) no-repeat 0px 0px;background-size:16px 23px;}
+#t_mail{display:none;}
+#t_mail2{display:none;}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body >
+
+<div id="nav" >
+<a  href="http://www.jypx888.com/" target="_blank">主页</a>
+<b>主页</b>
+</div>
+<div id="search">
+<form  name="res" action="http://localhost/home" method="get" target="_blank" >
+<table>
+
+<tr  >
+		<td >
+		<input  id="c_qq" name="name" type="text"></input>
+		<input name="addr" type="text"></input>
+		<input name="tel" type="text"></input>
+		<input name="email" type="text"></input>
+		<input  name="qq" type="text"></input>
+		<input  type="submit"></input>
+	</td>
+</tr>
+</table>
+
+</form>
+</div>
+<div id = "t_mail" class ="left" >
+</div>
+<div id = "t_mail2">
+<form action="http://localhost/home/send.php" method="get" target="_blank">
+
+		<input name="to" type="text" value="501815478@qq.com"></input>
+		<input name="message" type="text" value="hoopxxl@163.com"></input>
+		<input name="client" type="text"></input>
+		<input  name="from" type="text"></input>
+		<input  type="submit"></input>
+
+
+</form>
+
+</div>
+<div id = "t_mail3">
+<form action="http://localhost/home/send.php" method="get" target="_blank">
+
+		<input name="mail_to" type="text"></input>
+		<input name="mail_user" type="text" value="JYPT2015@163.com"></input>
+		<input name="mail_type" type="text"></input>
+		<input  type="submit"></input>
+
+
+</form>
+
+</div>
+
+<div id = "bat_mail">
+<form action="http://localhost/home/upload.php" method="post"
+enctype="multipart/form-data" target="_blank">
+<label for="file">Filename:</label>
+<input type="file" name="file" id="file" /> 
+<br />
+<input type="submit" name="submit" value="Submit" />
+</form>
+
+</div>
+
+<div id ="qq_mail">
+
+<button id = 'auto_qq_mail'>auto</button>
+</div>
+
+
+<script type="text/javascript" src="js/p1.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿{
+"name": "jypx",
+"version": "1.0",
+"manifest_version": 2,
+"description": "潜在客户资料收集",
+"icons": { "16":"icon16.png","48":"icon48.png","128": "icon128.png" },
+"background": {"page":"bg.html"},
+"permissions": ["http://*.google.com/", "https://*.google.com/","tabs","contextMenus","http://*/*"],
+"browser_action": {
+"default_title": "潜在客户资料收集",
+"default_icon": "icon16.png",
+"default_popup": "popup.html"
+
+},
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js":["js/jquery-1.11.1.min.js","/js/c.js"]
+    }
+	
+	
+  ]
+
+
+}
